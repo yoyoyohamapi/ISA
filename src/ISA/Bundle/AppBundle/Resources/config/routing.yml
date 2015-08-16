@@ -1,0 +1,3 @@
+isa_app_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ISAAppBundle:Default:index }

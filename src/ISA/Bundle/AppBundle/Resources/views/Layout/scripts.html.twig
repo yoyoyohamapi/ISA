@@ -1,0 +1,11 @@
+<script>
+    var app = {};
+    //    如果指明了预调用模块，则为app设置动作
+    {% if module is defined %}
+    app.action = '{{ module }}';
+    {% endif  %}
+</script>
+
+{# requirejs  #}
+<script data-main="{{ asset('assets/js/main.js') }}" src="{{ asset('bower_components/requirejs/require.js') }}"></script>
+

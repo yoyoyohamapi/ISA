@@ -1,0 +1,11 @@
+isa_storage_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ISAStorageBundle:Default:index }
+
+isa_storage_new:
+    path:     /new
+    defaults: { _controller: ISAStorageBundle:Book:new }
+
+isa_storage_create:
+    path:    /create
+    defaults: { _controller: ISAStorageBundle:Book:create }

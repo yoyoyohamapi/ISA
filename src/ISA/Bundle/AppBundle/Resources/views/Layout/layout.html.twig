@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {# 引入顶部导航栏位 #}
+    {% include '@ISAApp/Layout/header.html.twig' %}
+    {# 引入侧边栏位 #}
+    {% include '@ISAApp/Layout/sider.html.twig' %}
+    <div class="mainContainer">
+        {% block content %}
+        {% endblock %}
+    </div>
+    {# 引入footer #}
+    {% include '@ISAApp/Layout/footer.html.twig' %}
+    {# 引入脚本 #}
+    {% include '@ISAApp/Layout/scripts.html.twig' %}
+</body>
+</html>
